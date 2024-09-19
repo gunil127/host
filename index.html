@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>바카라 게임</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-table">
+        <h1>바카라 게임</h1>
+        <div class="bankroll">
+            <p>현재 자금: <span id="bankroll">$1000</span></p>
+            <input type="number" id="bet-amount" placeholder="베팅 금액" min="1" max="1000" />
+        </div>
+        <div class="betting-area">
+            <div class="bet" id="player-bet">Player</div>
+            <div class="bet" id="banker-bet">Banker</div>
+            <div class="bet" id="tie-bet">Tie</div>
+        </div>
+        <button id="deal-button">카드 딜링</button>
+        <div class="result" id="result"></div>
+        <div class="cards" id="cards"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
